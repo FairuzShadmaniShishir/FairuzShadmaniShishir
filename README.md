@@ -1,16 +1,18 @@
 ### Hi there 👋
 
-<!--
-**FairuzShadmaniShishir/FairuzShadmaniShishir** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Gist about me
 
-Here are some ideas to get you started:
+- 🎤 I am passonate about Artificial Intelligence and Machine Learning
+- 🛸 Learning everyday, currently learning to causal inference etc
+- 🌋 I’m always looking for challenging work oppurtunities ahead.
+- 💬 Actively writing blogs [check it out!](https://medium.com/@fsshishir95)
+- 📬 How to reach me:<a href="mailto:fsshishir95@gmail.com"> Let's get in touch!</a>
+- 🐣 [see my Tweet](https://twitter.com/fairuz_shadmani)
+- 💬 connect to [linkedin!](https://www.linkedin.com/in/fairuz-shadmani-shishir-558a13142/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+###
+
+Hi I am Fairuz Shadmani Shishir. I have completed my undergraduation from Ahsanullah University of Science and Technology. Now I am working as a machine learning Engineer in insidemaps. My research interest in Artificial Intelligence,Causal Inference,Computer Vision, Deep Learning, Data Science, Deep Generative models like GAN,VAE and its sub-fields.
+
+Happy coding!!
