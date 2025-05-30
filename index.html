@@ -446,6 +446,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#papers">Research Papers</a></li>
+                
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -544,32 +546,50 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">📱</div>
-                <div class="project-content">
-                    <h3 class="project-title">Mobile App Dashboard</h3>
-                    <p>A comprehensive dashboard for mobile app analytics with real-time data visualization and user insights.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">🌐</div>
-                <div class="project-content">
-                    <h3 class="project-title">E-commerce Platform</h3>
-                    <p>Full-stack e-commerce solution with payment integration, inventory management, and admin panel.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">🤖</div>
-                <div class="project-content">
-                    <h3 class="project-title">AI Chat Interface</h3>
-                    <p>Modern chat interface with AI integration, real-time messaging, and intuitive user experience.</p>
-                </div>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        
+        <!-- Antibody Design Project -->
+        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <div class="project-image" style="font-size: 2rem;">🧬</div>
+            <div class="project-content">
+                <h3 class="project-title">Antibody Design Platform</h3>
+                <p>Designed deep learning pipelines integrating ESM embeddings, normalizing flows, and autoregressive models to generate novel antibody sequences with high binding affinity.</p>
             </div>
         </div>
-    </section>
+
+        <!-- Drug Discovery Project -->
+        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <div class="project-image" style="font-size: 2rem;">💊</div>
+            <div class="project-content">
+                <h3 class="project-title">Drug Toxicity Prediction</h3>
+                <p>Developed a multimodal cardiotoxicity prediction model using ChemBERTa on SMILES strings and RDKit descriptors, achieving robust performance on real-world case studies.</p>
+            </div>
+        </div>
+
+        <!-- Protein Family Classification -->
+        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <div class="project-image" style="font-size: 2rem;">🔎</div>
+            <div class="project-content">
+                <h3 class="project-title">Protein Family Classifier</h3>
+                <p>Replaced BLAST-based classification with a deep learning approach using ProtGPT2 embeddings and XGBoost to classify novel protein sequences into known families.</p>
+            </div>
+        </div>
+
+        <!-- ECG Analysis Project -->
+        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <div class="project-image" style="font-size: 2rem;">🫀</div>
+            <div class="project-content">
+                <h3 class="project-title">ECG Representation Learning</h3>
+                <p>Applied variational autoencoders to ECG signals to create privacy-preserving, demographically de-biased latent representations, enabling accurate prediction of cardiac outcomes.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
