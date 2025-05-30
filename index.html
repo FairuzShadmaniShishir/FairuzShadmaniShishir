@@ -522,30 +522,30 @@
 
 
 <!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="skills-container">
-        <h2 class="section-title">Skills & Expertise</h2>
+<section id="skills" class="skills" style="background-color: #f9f9f9; padding: 60px 20px;">
+    <div class="skills-container" style="max-width: 1200px; margin: auto;">
+        <h2 class="section-title" style="text-align: center; color: #222; margin-bottom: 40px;">Skills & Expertise</h2>
         <div class="skills-grid" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
 
             <!-- Machine Learning & Deep Learning -->
-            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 <div class="skill-icon" style="font-size: 2rem;">🧠</div>
                 <h3>Machine Learning & Deep Learning</h3>
-                <p>Expertise in PyTorch, TensorFlow, Scikit-learn, XGBoost, Transformers, Variational Autoencoders (VAEs), and multimodal architectures for biomedical applications.</p>
+                <p>Expert in PyTorch, Transformers, XGBoost, and VAEs for biomedical and clinical applications.</p>
             </div>
 
             <!-- Drug Discovery & Bioinformatics -->
-            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 <div class="skill-icon" style="font-size: 2rem;">💊</div>
                 <h3>Drug Discovery & Bioinformatics</h3>
-                <p>Experienced in cheminformatics (RDKit, SMILES), protein engineering (ESM, ProtGPT2), and structure-function prediction pipelines integrating deep generative models.</p>
+                <p>Experienced in cheminformatics (RDKit, SMILES), protein models (ESM, ProtGPT2), and structure-function pipelines.</p>
             </div>
 
             <!-- ECG Signal Analysis -->
-            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 <div class="skill-icon" style="font-size: 2rem;">🫀</div>
                 <h3>ECG Signal Analysis</h3>
-                <p>Advanced signal processing using VAEs and CNNs for cardiac outcome prediction, demographic de-biasing, and waveform representation learning in clinical ECG data.</p>
+                <p>Deep learning and signal processing of ECG data using CNNs and VAEs for cardiac outcome prediction.</p>
             </div>
 
         </div>
@@ -553,50 +553,38 @@
 </section>
 
 
-    <!-- Projects Section -->
+
 <!-- Projects Section -->
-<section id="projects" class="projects">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 2rem;">
-        
-        <!-- Antibody Design Project -->
-        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
-            <div class="project-image" style="font-size: 2rem;">🧬</div>
-            <div class="project-content">
-                <h3 class="project-title">Antibody Design Platform</h3>
-                <p>Designed deep learning pipelines integrating ESM embeddings, normalizing flows, and autoregressive models to generate novel antibody sequences with high binding affinity.</p>
-            </div>
-        </div>
+<section id="projects" class="projects" style="background-color: #ffffff; padding: 60px 20px;">
+    <div class="projects-container" style="max-width: 1200px; margin: auto;">
+        <h2 class="section-title" style="text-align: center; color: #222; margin-bottom: 40px;">Featured Projects</h2>
+        <div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
 
-        <!-- Drug Discovery Project -->
-        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
-            <div class="project-image" style="font-size: 2rem;">💊</div>
-            <div class="project-content">
-                <h3 class="project-title">Drug Toxicity Prediction</h3>
-                <p>Developed a multimodal cardiotoxicity prediction model using ChemBERTa on SMILES strings and RDKit descriptors, achieving robust performance on real-world case studies.</p>
+            <!-- Antibody Design -->
+            <div class="project-card" style="flex: 1 1 300px; background: #f7f9fc; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <div class="project-image" style="font-size: 2rem;">🧬</div>
+                <h3 class="project-title">Antibody Design</h3>
+                <p>Designed and fine-tuned protein language models (ESM, ProtGPT2) for structure-aware antibody generation and classification.</p>
             </div>
-        </div>
 
-        <!-- Protein Family Classification -->
-        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
-            <div class="project-image" style="font-size: 2rem;">🔎</div>
-            <div class="project-content">
-                <h3 class="project-title">Protein Family Classifier</h3>
-                <p>Replaced BLAST-based classification with a deep learning approach using ProtGPT2 embeddings and XGBoost to classify novel protein sequences into known families.</p>
+            <!-- Drug Discovery -->
+            <div class="project-card" style="flex: 1 1 300px; background: #f7f9fc; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <div class="project-image" style="font-size: 2rem;">💊</div>
+                <h3 class="project-title">Drug Discovery Pipeline</h3>
+                <p>Developed a multimodal model combining SMILES (ChemBERT), molecular fingerprints, and descriptors for cardiotoxicity prediction.</p>
             </div>
-        </div>
 
-        <!-- ECG Analysis Project -->
-        <div class="project-card" style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
-            <div class="project-image" style="font-size: 2rem;">🫀</div>
-            <div class="project-content">
-                <h3 class="project-title">ECG Representation Learning</h3>
-                <p>Applied variational autoencoders to ECG signals to create privacy-preserving, demographically de-biased latent representations, enabling accurate prediction of cardiac outcomes.</p>
+            <!-- ECG Signal Analysis -->
+            <div class="project-card" style="flex: 1 1 300px; background: #f7f9fc; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <div class="project-image" style="font-size: 2rem;">🫀</div>
+                <h3 class="project-title">ECG Signal Analysis</h3>
+                <p>Applied deep learning (CNN + VAE) to large-scale 12-lead ECG data to extract bias-reduced encodings for cardiac risk prediction.</p>
             </div>
-        </div>
 
+        </div>
     </div>
 </section>
+
 
 
     <!-- Contact Section -->
