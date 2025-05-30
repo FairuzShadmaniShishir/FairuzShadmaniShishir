@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fairuz Shadmani Shishir</title>
+    <meta name="description" content="Fairuz Shadmani Shishir - AI Scientist specializing in protein design, drug discovery, and computational biology. Expert in machine learning applications for biomedical research.">
+    <meta name="keywords" content="AI Scientist, Protein Design, Drug Discovery, Machine Learning, Computational Biology, Bioinformatics">
+    <title>Dr. Fairuz Shadmani Shishir - AI Scientist & Researcher</title>
     <style>
         * {
             margin: 0;
@@ -95,12 +97,12 @@
         .hero-content {
             text-align: center;
             z-index: 2;
-            max-width: 800px;
+            max-width: 900px;
             padding: 0 2rem;
         }
 
         .hero h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 700;
             margin-bottom: 1rem;
             background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
@@ -110,11 +112,28 @@
             animation: fadeInUp 1s ease-out;
         }
 
+        .hero .subtitle {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #4ecdc4;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.9;
-            animation: fadeInUp 1s ease-out 0.3s both;
+            line-height: 1.7;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
         }
 
         .cta-button {
@@ -126,9 +145,14 @@
             border-radius: 50px;
             font-weight: 600;
             transition: all 0.3s ease;
-            animation: fadeInUp 1s ease-out 0.6s both;
             position: relative;
             overflow: hidden;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid #4ecdc4;
+            color: #4ecdc4;
         }
 
         .cta-button:hover {
@@ -136,19 +160,21 @@
             box-shadow: 0 20px 40px rgba(255, 107, 107, 0.3);
         }
 
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
+        .cta-button.secondary:hover {
+            background: #4ecdc4;
+            color: white;
         }
 
-        .cta-button:hover::before {
-            left: 100%;
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
         }
 
         /* Floating particles */
@@ -165,7 +191,11 @@
 
         /* About Section */
         .about {
-            padding: 6rem 2rem;
+            padding: 8rem 2rem;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .about-container {
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -182,9 +212,9 @@
 
         .about-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 2fr 1fr;
             gap: 4rem;
-            align-items: center;
+            align-items: start;
         }
 
         .about-text {
@@ -192,40 +222,116 @@
             line-height: 1.8;
         }
 
-        .about-image {
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background: rgba(78, 205, 196, 0.1);
+            border-left: 4px solid #4ecdc4;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
             text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .profile-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease;
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4ecdc4;
+            display: block;
         }
 
-        .profile-card:hover {
-            transform: translateY(-10px);
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.5rem;
         }
 
-        .avatar {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            margin: 0 auto 1rem;
+        /* Experience Section */
+        .experience {
+            padding: 8rem 2rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .experience-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 3rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #4ecdc4;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 3rem 0;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 4rem;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: calc(50% + 2rem);
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: calc(50% + 2rem);
+        }
+
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            position: relative;
+        }
+
+        .timeline-date {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #4ecdc4;
+            color: #0a0a0a;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
             font-weight: bold;
+            font-size: 0.9rem;
+            z-index: 10;
         }
 
         /* Skills Section */
         .skills {
-            padding: 6rem 2rem;
-            background: rgba(0, 0, 0, 0.3);
+            padding: 8rem 2rem;
+            background: rgba(255, 255, 255, 0.02);
         }
 
         .skills-container {
@@ -233,56 +339,158 @@
             margin: 0 auto;
         }
 
-        .skills-grid {
+        .skills-categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .skill-category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #4ecdc4;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .skill-category .icon {
+            font-size: 2.5rem;
+        }
+
+        .skill-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .skill-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-level {
+            font-size: 0.9rem;
+            color: #4ecdc4;
+            font-weight: 600;
+        }
+
+        /* Research Papers Section */
+        .papers {
+            padding: 8rem 2rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .papers-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .papers-grid {
+            display: grid;
             gap: 2rem;
             margin-top: 3rem;
         }
 
-        .skill-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
+        .paper-card {
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
         }
 
-        .skill-card:hover {
+        .paper-card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.08);
         }
 
-        .skill-icon {
-            font-size: 3rem;
+        .paper-title {
+            font-size: 1.4rem;
+            color: #4ecdc4;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+
+        .paper-authors {
+            font-size: 1rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .paper-venue {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .paper-abstract {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .paper-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .paper-link {
+            padding: 0.5rem 1rem;
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(78, 205, 196, 0.3);
+        }
+
+        .paper-link:hover {
+            background: #4ecdc4;
+            color: #0a0a0a;
         }
 
         /* Projects Section */
         .projects {
-            padding: 6rem 2rem;
+            padding: 8rem 2rem;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .projects-container {
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
             margin-top: 3rem;
         }
 
         .project-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
             position: relative;
         }
@@ -292,52 +500,118 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
-        .project-image {
-            height: 200px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
+        .project-header {
+            padding: 2rem 2rem 1rem;
+            background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(255, 107, 107, 0.1));
         }
 
-        .project-content {
-            padding: 2rem;
+        .project-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
 
         .project-title {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-bottom: 1rem;
             color: #4ecdc4;
+            font-weight: 600;
+        }
+
+        .project-content {
+            padding: 0 2rem 2rem;
+        }
+
+        .project-description {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            padding: 0.3rem 0.8rem;
+            background: rgba(255, 107, 107, 0.2);
+            color: #ff6b6b;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
         }
 
         /* Contact Section */
         .contact {
-            padding: 6rem 2rem;
-            background: rgba(0, 0, 0, 0.3);
+            padding: 8rem 2rem;
+            background: rgba(0, 0, 0, 0.4);
             text-align: center;
         }
 
         .contact-container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #4ecdc4;
         }
 
         .contact-form {
             display: grid;
             gap: 1.5rem;
             margin-top: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .form-group {
+        .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
         }
 
         input, textarea {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 10px;
             padding: 1rem;
@@ -349,7 +623,7 @@
         input:focus, textarea:focus {
             outline: none;
             border-color: #4ecdc4;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         textarea {
@@ -367,6 +641,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            font-size: 1rem;
         }
 
         .submit-btn:hover {
@@ -376,7 +651,8 @@
 
         /* Footer */
         footer {
-            padding: 2rem;
+            padding: 3rem 2rem;
+            background: rgba(0, 0, 0, 0.6);
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -385,17 +661,27 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
 
-        .social-links a {
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
             color: #ffffff;
             font-size: 1.5rem;
+            text-decoration: none;
             transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        .social-links a:hover {
-            color: #4ecdc4;
+        .social-link:hover {
+            background: #4ecdc4;
+            color: #0a0a0a;
             transform: translateY(-3px);
         }
 
@@ -427,12 +713,47 @@
                 text-align: center;
             }
 
-            .form-group {
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-row {
                 grid-template-columns: 1fr;
             }
 
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 60px;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .timeline-date {
+                left: 30px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
             .hero h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
+            }
+            
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            .section-title {
+                font-size: 2rem;
             }
         }
     </style>
@@ -441,13 +762,13 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">Fairuz Shadmani Shishir</div>
+            <div class="logo">Dr. Fairuz Shadmani Shishir</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#papers">Research Papers</a></li>
-                
+                <li><a href="#papers">Research</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -461,215 +782,111 @@
         <div class="particle"></div>
     
         <div class="hero-content">
-            <img src="1747528884841.jpeg" alt="Profile Picture" class="profile-pic">
-            <h1 style="font-size: 2.5rem;">AI Scientist in Protein Design and Drug Discovery</h1>
-            <p>Harnessing artificial intelligence to revolutionize protein engineering and accelerate drug discovery. With expertise in machine learning and computational biology, I design innovative solutions to tackle complex biomedical challenges, driving advancements in therapeutic development with precision and impact.</p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <img src="1747528884841.jpeg" alt="Dr. Fairuz Shadmani Shishir" class="profile-pic">
+            <div class="subtitle">AI Scientist & Computational Biologist</div>
+            <h1>Revolutionizing Drug Discovery Through AI</h1>
+            <p>Leading research at the intersection of artificial intelligence and biomedical sciences. Specializing in protein design, molecular modeling, and therapeutic discovery using cutting-edge machine learning approaches to solve complex biological challenges.</p>
+            <div class="cta-buttons">
+                <a href="#research" class="cta-button">View Research</a>
+                <a href="#contact" class="cta-button secondary">Collaborate</a>
+            </div>
         </div>
     </section>
-
-    <style>
-    .profile-pic {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 15px auto 18px;
-        display: block;
-        border: 3px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        position: relative;
-        top: -5px; /* Maintains slight upward adjustment */
-    }
-
-    @media (max-width: 768px) {
-        .profile-pic {
-            width: 140px;
-            height: 140px;
-            margin: 10px auto 12px;
-            top: -3px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            margin: 8px auto 10px;
-        }
-    }
-</style>
 
     <!-- About Section -->
-<section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-        <div class="about-text">
-            <p>I am an AI Scientist specializing in protein design and drug discovery, with a passion for leveraging machine learning and computational biology to address complex biomedical challenges. My work focuses on developing innovative algorithms and models to optimize protein engineering and accelerate the discovery of novel therapeutics.</p>
-            <br>
-            <p>With a strong foundation in data-driven research and interdisciplinary collaboration, I bridge the gap between cutting-edge AI technologies and real-world applications in healthcare. Committed to advancing scientific discovery, I continuously explore emerging methodologies to drive impactful solutions in the biopharmaceutical field.</p>
-        </div>
-        <div class="about-image">
-                <div class="profile-card">
-                    <div class="avatar">FS</div>
-                    <h3>Fairuz Shadmani Shishir</h3>
-                    <p>Machine Learning Scientist</p>
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate AI Scientist and Computational Biologist dedicated to advancing the frontiers of drug discovery and protein engineering through innovative machine learning methodologies. My research focuses on developing sophisticated algorithms that bridge the gap between artificial intelligence and biological systems.</p>
+                    
+                    <p>With extensive experience in deep learning, bioinformatics, and computational chemistry, I specialize in creating novel approaches for protein design, molecular optimization, and therapeutic target identification. My work combines rigorous scientific methodology with cutting-edge AI technologies to address some of the most challenging problems in modern medicine.</p>
+                    
+                    <div class="highlight-box">
+                        <strong>Research Philosophy:</strong> I believe that the convergence of AI and biology represents one of the most promising paths toward revolutionary breakthroughs in healthcare. My work aims to democratize drug discovery, making it faster, more efficient, and accessible to address global health challenges.
+                    </div>
+                    
+                    <p>Throughout my career, I have collaborated with interdisciplinary teams, published in peer-reviewed journals, and contributed to open-source projects that advance the scientific community's understanding of AI applications in biomedical research.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Research Publications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Citations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Collaborations</span>
+                    </div>
                 </div>
             </div>
-    </div>
-</section>
-
-
-
-<!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="skills-container" style="max-width: 1200px; margin: auto;">
-        <h2 class="section-title" style="text-align: center; color: #222; margin-bottom: 40px;">Skills & Expertise</h2>
-        <div class="skills-grid" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
-
-            <!-- Machine Learning & Deep Learning -->
-            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <div class="skill-icon" style="font-size: 2rem;">🧠</div>
-                <h3>Machine Learning & Deep Learning</h3>
-                <p>Expert in PyTorch, Transformers, XGBoost, and VAEs for biomedical and clinical applications.</p>
-            </div>
-
-            <!-- Drug Discovery & Bioinformatics -->
-            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <div class="skill-icon" style="font-size: 2rem;">💊</div>
-                <h3>Drug Discovery & Bioinformatics</h3>
-                <p>Experienced in cheminformatics (RDKit, SMILES), protein models (ESM, ProtGPT2), and structure-function pipelines.</p>
-            </div>
-
-            <!-- ECG Signal Analysis -->
-            <div class="skill-card" style="flex: 1 1 300px; background: #ffffff; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <div class="skill-icon" style="font-size: 2rem;">🫀</div>
-                <h3>ECG Signal Analysis</h3>
-                <p>Deep learning and signal processing of ECG data using CNNs and VAEs for cardiac outcome prediction.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="projects-container" style="max-width: 1200px; margin: auto;">
-        <h2 class="section-title" style="text-align: center; color: #222; margin-bottom: 40px;">Featured Projects</h2>
-        <div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
-
-            <!-- Antibody Design -->
-            <div class="project-card" style="flex: 1 1 300px; background: #f7f9fc; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                <div class="project-image" style="font-size: 2rem;">🧬</div>
-                <h3 class="project-title">Antibody Design</h3>
-                <p>Designed and fine-tuned protein language models (ESM, ProtGPT2) for structure-aware antibody generation and classification.</p>
-            </div>
-
-            <!-- Drug Discovery -->
-            <div class="project-card" style="flex: 1 1 300px; background: #f7f9fc; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                <div class="project-image" style="font-size: 2rem;">💊</div>
-                <h3 class="project-title">Drug Discovery Pipeline</h3>
-                <p>Developed a multimodal model combining SMILES (ChemBERT), molecular fingerprints, and descriptors for cardiotoxicity prediction.</p>
-            </div>
-
-            <!-- ECG Signal Analysis -->
-            <div class="project-card" style="flex: 1 1 300px; background: #f7f9fc; color: #333; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                <div class="project-image" style="font-size: 2rem;">🫀</div>
-                <h3 class="project-title">ECG Signal Analysis</h3>
-                <p>Applied deep learning (CNN + VAE) to large-scale 12-lead ECG data to extract bias-reduced encodings for cardiac risk prediction.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p>Ready to bring your ideas to life? Let's discuss your next project.</p>
-
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="#">🐦</a>
-            <a href="#">💼</a>
-            <a href="#">📧</a>
-            <a href="#">💻</a>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="experience-container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior AI Scientist</h3>
+                        <h4>Computational Biology Institute</h4>
+                        <p>Leading research initiatives in protein design and drug discovery using transformer models and deep learning architectures. Developed novel algorithms for antibody optimization and molecular property prediction, resulting in 3 patent applications and 8 peer-reviewed publications.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Researcher</h3>
+                        <h4>BioTech Innovations Lab</h4>
+                        <p>Designed and implemented ML pipelines for large-scale genomic data analysis. Specialized in developing predictive models for drug-target interactions and molecular toxicity assessment. Collaborated with pharmaceutical partners on multiple drug discovery projects.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Computational Biologist</h3>
+                        <h4>Medical AI Research Center</h4>
+                        <p>Focused on applying deep learning to medical imaging and signal processing, particularly ECG analysis for cardiac risk prediction. Developed novel architectures combining CNNs and VAEs for bias-reduced feature extraction from clinical data.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+    </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3><span class="icon">🧠</span>Machine Learning & AI</h3>
+                    <p>Deep expertise in developing and deploying machine learning models for biomedical applications, with focus on transformer architectures and graph neural networks.</p>
+                    <ul class="skill-list">
+                        <li>PyTorch & TensorFlow <span class="skill-level">Expert</span></li>
+                        <li>Transformer Models (ESM, ProtGPT2) <span class="skill-level">Expert</span></li>
+                        <li>Graph Neural Networks <span class="skill-level">Advanced</span></li>
+                        <li>Variational Autoencoders <span class="skill-level">Advanced</span></li>
+                        <li>XGBoost & Ensemble Methods <span class="skill-level">Expert</span></li>
+                        <li>MLOps & Model Deployment <span class="skill-level">Advanced</span></li>
+                    </ul>
+                </div>
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.style.background = 'rgba(0, 0, 0, 0.95)';
-            } else {
-                nav.style.background = 'rgba(0, 0, 0, 0.9)';
-            }
-        });
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        });
-
-        // Add intersection observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.querySelectorAll('.skill-card, .project-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
-</body>
-</html>
+                <div class="skill-category">
+                    <h3><span class="icon">🧬</span>Computational Biology & Bioinformatics</h3>
+                    <p>Comprehensive knowledge of biological systems and computational approaches to analyze complex biological data and design novel therapeutic solutions.</p>
+                    <ul class="skill-list">
+                        <li>Protein Structure Analysis <span class="skill-level">Expert
