@@ -499,17 +499,96 @@
 </style>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a passionate developer who loves creating beautiful, functional, and user-friendly applications. With expertise in modern web technologies, I bring ideas to life through clean code and innovative design.</p>
-                <br>
-                <p>My journey in tech has been driven by curiosity and a desire to solve real-world problems through technology. I believe in continuous learning and staying up-to-date with the latest industry trends.</p>
-            </div>
-        
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>I am an AI Scientist specializing in protein design and drug discovery, with a passion for leveraging machine learning and computational biology to address complex biomedical challenges. My work focuses on developing innovative algorithms and models to optimize protein engineering and accelerate the discovery of novel therapeutics.</p>
+            <br>
+            <p>With a strong foundation in data-driven research and interdisciplinary collaboration, I bridge the gap between cutting-edge AI technologies and real-world applications in healthcare. Committed to advancing scientific discovery, I continuously explore emerging methodologies to drive impactful solutions in the biopharmaceutical field.</p>
         </div>
-    </section>
+        <div class="about-image">
+            <img src="1747528884841.jpeg" alt="Lab Environment" class="lab-pic">
+        </div>
+    </div>
+</section>
+
+<style>
+    .about {
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+    .about-text {
+        flex: 1;
+        min-width: 300px;
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .about-image {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+    }
+
+    .lab-pic {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-text, .about-image {
+            text-align: center;
+        }
+
+        .lab-pic {
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .about-text {
+            font-size: 1rem;
+        }
+
+        .lab-pic {
+            max-width: 250px;
+        }
+    }
+</style>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
