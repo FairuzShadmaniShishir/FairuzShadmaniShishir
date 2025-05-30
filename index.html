@@ -468,24 +468,35 @@
 
     <style>
     .profile-pic {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         object-fit: cover;
-        margin: 0 auto 15px;
+        margin: 15px auto 18px;
         display: block;
-        border: 2px solid #fff;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        border: 3px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        position: relative;
+        top: -5px; /* Maintains slight upward adjustment */
     }
 
     @media (max-width: 768px) {
         .profile-pic {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
+            width: 140px;
+            height: 140px;
+            margin: 10px auto 12px;
+            top: -3px;
         }
     }
-   </style>
+
+    @media (max-width: 480px) {
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            margin: 8px auto 10px;
+        }
+    }
+</style>
 
     <!-- About Section -->
     <section id="about" class="about">
