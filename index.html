@@ -168,10 +168,11 @@
 .profile-pic {
     width: 100%;
     max-width: 300px;
-    aspect-ratio: 1 / 1;            /* Makes it a square */
-    border-radius: 50%;
+    height: auto; /* Keeps original aspect ratio */
+    border-radius: 12px; /* Subtle rounding instead of circle */
     object-fit: cover;
-    object-position: top center;
+    object-position: center;
+    display: block;
 }
 
 
