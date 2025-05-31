@@ -166,16 +166,18 @@
         }
         
         .profile-pic {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            max-width: 300px;       /* or any max size you want */
+            height: auto;           /* let it scale naturally */
             border-radius: 50%;
-            object-fit: cover;
-            object-position: top center; /* <--- this focuses on the top */
-            margin: 0 auto 20px;
+            object-fit: cover;      /* maintain aspect, fill circle */
+            object-position: top center; /* center the face toward top */
             display: block;
+            margin: 0 auto 20px;
             border: 4px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 1s ease-out;
+            image-rendering: auto;  /* prevent quality loss */
         }
 
 
@@ -765,7 +767,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">Dr. Fairuz Shadmani Shishir</div>
+            <div class="logo">Fairuz Shadmani Shishir</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
