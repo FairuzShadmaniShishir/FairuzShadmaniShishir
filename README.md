@@ -22,7 +22,7 @@ PhD Candidate in Computer Science at the University of Kansas, building deep lea
 - **ECG Diagnostics** — Privacy-preserving cardiac AI · *Nature Scientific Reports*
 - **CIgFlow** — Antibody design via conditional flow matching · *Under Review, IEEE TCBB 2026*
 - **GPCR-SLM** — Scalable GPCR classification · *Under Review, IEEE TCBB 2026*
-📚 Full list on [Google Scholar](#)
+📚 Full list on [Google Scholar](https://scholar.google.com/citations?user=wG5cR4oAAAAJ&hl=en)
  
 ---
  
@@ -50,4 +50,4 @@ PhD Candidate in Computer Science at the University of Kansas, building deep lea
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fairuz-shadmani-shishir-558a13142/)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/fairuz_shadmani)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:shishir@ku.edu)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](#)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=wG5cR4oAAAAJ&hl=en)
