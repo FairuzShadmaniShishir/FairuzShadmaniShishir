@@ -921,11 +921,13 @@
                         <h3 class="project-title">AI-Driven Antibody Design Platform</h3>
                     </div>
                     <div class="project-content">
-                        <p class="project-description">Developed a comprehensive platform that integrates protein language models with structural biology data to design optimized antibody therapeutics. The system combines ESM-2 and ProtGPT2 models with custom fine-tuning strategies, achieving significant improvements in binding affinity prediction and reducing experimental validation time by 60%.</p>
+                        <p class="project-description">Developed CIgFlow, a generative AI framework for antigen-conditioned antibody design that combines Conditional Flow Matching (CFM) with a GPT-2-style autoregressive decoder. The model learns a continuous mapping from joint antibody-antigen embeddings to novel antibody sequences, enabling targeted therapeutic generation. By integrating protein language model embeddings, classifier-free guidance, and ODE-based latent sampling, CIgFlow generates diverse, antigen-specific antibodies while maintaining sequence quality, humanness, and developability characteristics.
+</p>
                         <div class="project-tech">
                             <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">Transformers</span>
                             <span class="tech-tag">ESM-2</span>
+                            <span class="tech-tag">Flow-Matching/span>
                             <span class="tech-tag">ProtGPT2</span>
                             <span class="tech-tag">Biopython</span>
                             <span class="tech-tag">AlphaFold</span>
@@ -957,6 +959,58 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🧬</div>
+                        <h3 class="project-title">NbBayesLM: Bayesian Nanobody Thermostability Prediction</h3>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Developed a Bayesian deep learning framework for predicting nanobody melting temperature (Tm) with calibrated uncertainty estimates. NbBayesLM integrates protein language model embeddings from ESM-2 and AbLang with physicochemical features as Bayesian priors, enabling accurate thermostability prediction and experimental prioritization. Evaluated on over 10,000 nanobody sequences, the model achieved a MAE of 1.89°C and R² of 0.67 while providing interpretable epistemic and aleatoric uncertainty decomposition to guide biologics discovery and reduce wet-lab screening costs.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Bayesian Neural Networks</span>
+                            <span class="tech-tag">ESM-2</span>
+                            <span class="tech-tag">AbLang</span>
+                            <span class="tech-tag">Protein Language Models</span>
+                            <span class="tech-tag">Biologics AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FairuzShadmaniShishir/NbBayesLM" class="project-link">GitHub</a>
+                            <a href="https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1832968/full" class="project-link">Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🧬</div>
+                        <h3 class="project-title">GPCR-SLM: Small Language Model for GPCR Classification</h3>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Developed a lightweight transformer-based protein language model for classifying G protein-coupled receptors (GPCRs) across 86 families using knowledge distillation. GPCR-SLM achieves 99% classification accuracy while delivering a 33.5× computational speedup compared to large protein language models. The framework supports open-set recognition for novel GPCR families and was externally validated on clinical variants, metagenomic sequences, and tumor-derived datasets, demonstrating strong generalization for large-scale drug discovery and genomics applications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">Knowledge Distillation</span>
+                            <span class="tech-tag">Protein Language Models</span>
+                            <span class="tech-tag">Bioinformatics</span>
+                            <span class="tech-tag">GPCR Discovery</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FairuzShadmaniShishir/GPCR-SLM" class="project-link">GitHub</a>
+                            <a href="YOUR_PAPER_LINK" class="project-link">Paper</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">🫀</div>
